@@ -52,16 +52,14 @@ public class MainApp {
          System.out.println("Car = " + user.getCar().getModel() + " " + user.getCar().getSeries());
          System.out.println();
       }
-      List<User> users1 = userService.getUserOnModel("VW", 444);
-      for(User user : users1){
-         System.out.println(user.toString());
-         System.out.println("Id = "+user.getId());
-         System.out.println("First Name = "+user.getFirstName());
-         System.out.println("Last Name = "+user.getLastName());
-         System.out.println("Email = "+user.getEmail());
-         System.out.println("Car = " + user.getCar().getModel() + " " + user.getCar().getSeries());
+      User user1 = userService.getUserOnModel("VW", 444);
+         System.out.println(user1.toString());
+         System.out.println("Id = "+ user1.getId());
+         System.out.println("First Name = " +user1.getFirstName());
+         System.out.println("Last Name = "+ user1.getLastName());
+         System.out.println("Email = "+ user1.getEmail());
+         System.out.println("Car = " + user1.getCar().getModel() + " " + user1.getCar().getSeries());
          System.out.println();
-      }
       context.close();
    }
 }
